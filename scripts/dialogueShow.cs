@@ -22,7 +22,7 @@ public class dialogueShow : MonoBehaviour
 
     public void stopSpeaking()
     {
-        if(isSpeaking)
+        if(isSpeaking) //si hay alguien hablando, para de hablar
         {
             StopCoroutine(speaking);        
         }
@@ -30,26 +30,34 @@ public class dialogueShow : MonoBehaviour
         speaking = null;
     }
 
-    public bool isSpeaking {get{return speaking != null;}}
-    public bool isWaitingForUserInput = false;
+    public bool isSpeaking {get{return speaking != null;}} //asegura que nadie este hablando,si alguien habla devuelve true
+    public bool isWaitingForUserInput = false; //interaccion con el jugador, regula la salida de texto
 
     Coroutine speaking = null;
 
-    IEnumerator speakingCoroutine(string targetText, string character = "")
+    IEnumerator speakingCoroutine(string targetText, string character = "") //se ejecuta mientras alguien dice algo
     {
         dialogueBackground.SetActive(true);
         characterText.text = "";
         characterName.text = WhoTalking(character);
         isWaitingForUserInput = false;
 
+        /*
+        esto escribe el texto letra a letra, hasta que se ha escrito entero (se comprueba comparando las cadenas objetivo y actual)
+        tambien evita que se solape texto si el jugador pulsa para continuar antes de que se termine de escribir
+        */
         while(characterText.text != targetText)
         {
             characterText.text += targetText[characterText.text.Length];
             yield return new WaitForEndOfFrame();
         }
 
+        /*
+        el texto ya ha sido escrito entero
+        el juego esperara a que el jugador pulse el boton asignado para continuar
+        */
         isWaitingForUserInput = true;
-        while(isWaitingForUserInput)
+        while(isWaitingForUserInput) //
         {
             yield return new WaitForEndOfFrame();
         }
@@ -59,14 +67,14 @@ public class dialogueShow : MonoBehaviour
 
     string WhoTalking(string s)
     {
-        string retVal = characterName.text;
+        string nombreSalida = characterName.text;
         
         if(s != characterName.text && s != "")
         {
-            retVal = (s.ToLower().Contains("Narrador")) ? "" : s;
+            nombreSalida = (s == "narrador") ? "" : s;
         }
 
-        return retVal;
+        return nombreSalida;
     }
 
     public void EndText()
@@ -77,7 +85,7 @@ public class dialogueShow : MonoBehaviour
 
     [System.Serializable]
 
-    public class elements
+    public class elements //tener controlada la interfaz como un grupo
     {
         public Text characterText;
         public Text characterName;

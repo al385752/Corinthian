@@ -270,11 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 095dfcd0268a1814a9be857cef0dcea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  s:
-  - joder:nacho
-  - estan pintando toda la casa
-  - me corro:fernando
-  - AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+  asset: {fileID: 4900000, guid: 661621ee0aadef04b8f1caacb0d7202b, type: 3}
 --- !u!114 &129241353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -460,7 +456,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CharacterName
+  m_Text: 
 --- !u!222 &660055900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -649,7 +645,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CharactertText
+  m_Text: 
 --- !u!222 &1201418447
 CanvasRenderer:
   m_ObjectHideFlags: 0
