@@ -8,6 +8,7 @@ public class dialogueShow : MonoBehaviour
 
     public static dialogueShow instance;
     public elements hud;
+    public GameObject continueButton;
 
     void Awake()
     {
@@ -40,6 +41,7 @@ public class dialogueShow : MonoBehaviour
         dialogueBackground.SetActive(true);
         characterText.text = "";
         characterName.text = WhoTalking(character);
+        continueButton.SetActive(false);
         isWaitingForUserInput = false;
 
         /*
@@ -56,6 +58,7 @@ public class dialogueShow : MonoBehaviour
         el texto ya ha sido escrito entero
         el juego esperara a que el jugador pulse el boton asignado para continuar
         */
+        continueButton.SetActive(true);
         isWaitingForUserInput = true;
         while(isWaitingForUserInput) //
         {

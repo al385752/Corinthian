@@ -37,7 +37,7 @@ public class SomeText : MonoBehaviour
     int i = 0;
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetKeyDown("space"))
         {
             if(!dialogue.isSpeaking || dialogue.isWaitingForUserInput) //si nadie esta hablando y se espera que el jugador le de al raton, se pasa a la siguiente frase
             {
@@ -57,7 +57,7 @@ public class SomeText : MonoBehaviour
 
     void say(string s) //coge la cadena que se pasa y la divide con el operador especial
     {
-        string[] frases = s.Split(":");
+        string[] frases = s.Split(">");
         string text = frases[0]; //el texto siempre va a ser lo primero
         string character = (frases.Length >= 2) ? frases[1] : ""; //si hay persona hablando, se pasa su nombre, si no, cadena vacia
 
