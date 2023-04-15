@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 using System.IO;
 
 public class chapterManager : MonoBehaviour
@@ -12,14 +13,24 @@ public class chapterManager : MonoBehaviour
 
     void Awake()
     {
-        data = asset.text.Split('\n');
+        LoadChapterFile("chapter1");
+        
     }
 
     // Start is called before the first frame update
     void Start()
     {
         chapterProgress = 0; //el capitulo debe de empezar a leerse por el principio
+        readLine(data[chapterProgress]);
+        chapterProgress = 1;
         lastCharacterTalking = ""; //no hay nadie hablando antes de que comience el capitulo!!
+    }
+
+    void LoadChapterFile(string chapterName)
+    {
+        AssetDatabase.ImportAsset(chapterName + ".txt");
+        asset = (TextAsset)Resources.Load(chapterName);
+        data = asset.text.Split('\n');
     }
 
     // Update is called once per frame
