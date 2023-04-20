@@ -423,7 +423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 493.2, y: -75.6}
+  m_AnchoredPosition: {x: 491.2, y: -44.1}
   m_SizeDelta: {x: 24.9153, y: 24.9153}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &633897910
@@ -500,8 +500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -156.58, y: 44.959}
-  m_SizeDelta: {x: -409.17, y: -118.32}
+  m_AnchoredPosition: {x: -168.68997, y: 39.012367}
+  m_SizeDelta: {x: -433.38, y: -98.0083}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &660055899
 MonoBehaviour:
@@ -635,8 +635,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -151.72346}
-  m_SizeDelta: {x: -83.1995, y: -434.5221}
+  m_AnchoredPosition: {x: 0, y: -132.18481}
+  m_SizeDelta: {x: -83.1995, y: -395.4448}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1016106764
 MonoBehaviour:
@@ -788,8 +788,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -168.68954, y: -11.412498}
-  m_SizeDelta: {x: -433.3789, y: -56.7889}
+  m_AnchoredPosition: {x: -168.68997, y: -11.8392}
+  m_SizeDelta: {x: -433.3789, y: -53.9187}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1201418445
 MonoBehaviour:
@@ -874,7 +874,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1467615332}
   - component: {fileID: 1467615333}
-  - component: {fileID: 1467615334}
   m_Layer: 5
   m_Name: choiceMenu
   m_TagString: Untagged
@@ -901,7 +900,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1108, y: 623}
+  m_SizeDelta: {x: 1101, y: 519}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467615333
 MonoBehaviour:
@@ -918,21 +917,6 @@ MonoBehaviour:
   root: {fileID: 848357959}
   buttonPrefab: {fileID: 1252025346}
   buttonLayoutGroup: {fileID: 2030300537}
---- !u!114 &1467615334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1467615331}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 419326063026fc145a37babb7fdb6f50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  choices:
-  - deficiencia de hierro
-  - diarrea cronica
 --- !u!1 &1590366078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,10 +1109,10 @@ RectTransform:
   m_Father: {fileID: 848357960}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.61800003, y: 0.16146706}
-  m_AnchorMax: {x: 0.933, y: 0.365}
-  m_AnchoredPosition: {x: 0.047302246, y: 0}
-  m_SizeDelta: {x: -0.25289917, y: 0.3496}
+  m_AnchorMin: {x: 0.605, y: 0.148}
+  m_AnchorMax: {x: 0.92, y: 0.351}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -0.25289917, y: 0.34959984}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030300537
 MonoBehaviour:

@@ -1,9 +1,17 @@
-nacho:joder:setBackground(fondito)
-+:estan pintando toda la casa:
-fer:me corro:
-+:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:
-ana:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA:
-setBackground(bowser)
-nacho:cuando has entrado:
-ana:hace un rato:
-narrador:entró hace un rato:
+narrador:Has llegado al pueblo:setBackground(fondito)
++:Se acerca alguien:
+Chai:Capitán, ¿cómo ha ido el viaje?:
++:Espero que bien:
+Sheran:Tenga cuidado con lo que pasa en ese pueblo:
+narrador:Ves el pueblo:setBackground(pueblo)
+Chai:Vamos a comprobar sus capacidades:
++:Pruebe a mentirme:
+choice
+{
+"Mentir"
+saveThrow(mentira,10,chapter_1a,chapter_1b)
+"Ser honesto"
+changeAbilityScore(mentira,15)
+}
+Chai:Dudo que eso sea mentira:
+narrador:Ha mejorado tu capacidad de mentir:

@@ -7,30 +7,21 @@ using System.IO;
 
 public class chapterManager : MonoBehaviour
 {
+    public static chapterManager instance;
     public TextAsset asset;
-    public static string[] data; // donde estaran almacenadas las lineas del archivo
-    int chapterProgress = 0; //referencia al numero de linea del archivo
+    public static string[] chapterData; // donde estaran almacenadas las lineas del archivo
+    playerCharacterSheet player = new playerCharacterSheet(10, 10, 10, 10);
 
     void Awake()
     {
-        LoadChapterFile("chapter1");
-        
+        instance = this;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        chapterProgress = 0; //el capitulo debe de empezar a leerse por el principio
-        readLine(data[chapterProgress]);
-        chapterProgress = 1;
+        LoadChapterFile("chapter1");
         lastCharacterTalking = ""; //no hay nadie hablando antes de que comience el capitulo!!
-    }
-
-    void LoadChapterFile(string chapterName)
-    {
-        AssetDatabase.ImportAsset(chapterName + ".txt");
-        asset = (TextAsset)Resources.Load(chapterName);
-        data = asset.text.Split('\n');
     }
 
     // Update is called once per frame
@@ -38,13 +29,106 @@ public class chapterManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            readLine(data[chapterProgress]);
+            nextLine();
+        }
+    }
+
+    bool nextLineBool = false;
+    public void nextLine()
+    {
+        nextLineBool = true;
+    }
+
+    public void LoadChapterFile(string chapterName)
+    {
+        AssetDatabase.ImportAsset(chapterName + ".txt");
+        asset = (TextAsset)Resources.Load(chapterName);
+        chapterData = asset.text.Split('\n');
+
+        if(chapterHandler != null)
+            StopCoroutine(chapterHandler);
+        chapterHandler = StartCoroutine(chapterHandlerCoroutine());
+        nextLine();
+    }
+
+    public bool isHandlingChapter {get {return chapterHandler != null;}}
+    Coroutine chapterHandler = null;
+    int chapterProgress = 0;
+    IEnumerator chapterHandlerCoroutine()
+    {
+        chapterProgress = 0;
+
+        while(chapterProgress < chapterData.Length)
+        {
+            if(nextLineBool)
+            {
+                string line = chapterData[chapterProgress];
+
+                if(line.StartsWith("choice"))
+                {
+                    yield return readChoicesCoroutine(line);
+                    chapterProgress++;
+                }
+                else
+                {
+                    readLine(line);
+                    chapterProgress++;
+                }
+            }
+            yield return new WaitForEndOfFrame();
+        }
+
+        chapterHandler = null;
+    }
+
+    IEnumerator readChoicesCoroutine(string line)
+    {
+        List<string> choices = new List<string>();
+        List<string> actions = new List<string>();
+
+        bool readingChoices = true;
+        while(readingChoices)
+        {
             chapterProgress++;
+            line = chapterData[chapterProgress];
+
+            if(line.Contains("{"))
+            {
+                continue;
+            }
+
+            if(line.Contains("}"))
+            {
+                Debug.Log("sacabao");
+                readingChoices = false;
+            }
+            else
+            {
+                choices.Add(line.Split('"')[1]);
+                actions.Add(chapterData[chapterProgress+1]);
+                chapterProgress++;
+            }
+        }
+
+        if(choices.Count > 0)
+        {
+            choiceMenu.show(choices.ToArray());
+            yield return new WaitForEndOfFrame();
+            while(choiceMenu.isWaitingForChoiceToBeMade)
+                yield return new WaitForEndOfFrame();
+            
+            string actionChoice = actions[choiceMenu.lastChoice.index];
+            readLine(actionChoice);
+        }
+        else
+        {
+            Debug.LogError("no detecto elecciones");
         }
     }
 
     void readLine(string line)
     {
+        nextLineBool = false;
         string[] fileLine = line.Split(':');
 
         if(fileLine.Length == 3)
@@ -83,36 +167,94 @@ public class chapterManager : MonoBehaviour
     void itIsAction(string action)
     {
         string[] actionSplit = action.Split('(', ')');
-        if(actionSplit[0] == "setBackground")
+
+        switch(actionSplit[0])
         {
-            setLayerImage(actionSplit[1], GameObject.FindGameObjectsWithTag("fondo")[0], 2);
-            return;
+            case "setBackground":
+                setLayerImage(actionSplit[1], GameObject.FindGameObjectsWithTag("fondo")[0], 2);
+                break;
+            
+            case "Load":
+                setNewChapter(actionSplit[1]);
+                break;
+            
+            case "saveThrow":
+                string[] details = actionSplit[1].Split(',');
+                savingThrow(details[0], int.Parse(details[1]), details[2], details[3]);
+                break;
+            
+            case "changeAbilityScore":
+                string[] newDetails = actionSplit[1].Split(',');
+                changeAbilityScore(newDetails[0], int.Parse(newDetails[1]));
+                break;
         }
     }
 
     void setLayerImage(string imageName, GameObject fondo, float transitionSpeed)
-    {   
-        /*if(fondo.GetComponent<Image>().sprite != null)
-            StartCoroutine(FadeCanvasGroup(fondo.GetComponent<CanvasGroup>(), 1, 0, transitionSpeed));*/
-
+    {
         fondo.GetComponent<Image>().sprite = Resources.Load<Sprite>("imgs/fondos/" + imageName);
         StartCoroutine(FadeCanvasGroup(fondo.GetComponent<CanvasGroup>(), 0, 1, transitionSpeed));
+    }
 
-        /*Vector4 initial = (1f, 1f, 1f, 1f);
-        Vector4 final = (1f, 1f, 1f, 0f);
-        //de 1 a 0
-        fondo.GetComponent<Image>().color = Mathf.Lerp(initial, final, Time.deltaTime);
-        //cambio de imagen y de 0 a 1
-        fondo.GetComponent<Image>().sprite = Resources.Load<Sprite>("imgs/fondos/" + imageName);
-        fondo.GetComponent<Image>().color = Mathf.Interp(final, initial, Time.deltaTime);
-        while(fondo.GetComponent<Image>().color.a < 1)
+    void setNewChapter(string newChapter)
+    {
+        chapterManager.instance.LoadChapterFile(newChapter);
+    }
+
+    void savingThrow(string abilitySave, int dc, string winChapter, string loseChapter)
+    {
+        bool playerHasWon = false;
+        switch (abilitySave)
         {
-            Color transition = fondo.GetComponent<Image>().color;
-            transition.a += 1f/255f;
-            fondo.GetComponent<Image>().color = tempColor;
+            case "intimidacion":
+                if(player.intimidacionCheck() >= dc)
+                {
+                    playerHasWon = true;
+                }
+                break;
+            
+            case "persuasion":
+                if(player.persuasionCheck() >= dc)
+                    playerHasWon = true;
+                break;
+            
+            case "perspicacia":
+                if(player.perspicaciaCheck() >= dc)
+                    playerHasWon = true;
+                break;
+            
+            default:
+                if(player.mentiraCheck() >= dc)
+                    playerHasWon = true;
+                break;
         }
-        tempColor.a = 1f;
-        fondo.GetComponent<Image>().color = tempColor;*/
+
+        if(playerHasWon)
+            LoadChapterFile(winChapter);
+        else
+            LoadChapterFile(loseChapter);
+    }
+
+    void changeAbilityScore(string ability, int amount)
+    {
+        switch (ability)
+        {
+            case "intimidacion":
+                player._intimidacion = (amount - 10) / 2;
+                break;
+            
+            case "persuasion":
+                player._persuasion = (amount - 10) / 2;
+                break;
+            
+            case "perspicacia":
+                player._perspicacia = (amount - 10) / 2;
+                break;
+            
+            default:
+                player._intimidacion = (amount - 10) / 2;
+                break;
+        }
     }
 
     IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float lerpTime = 1)
