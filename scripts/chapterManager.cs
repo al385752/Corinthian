@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEditor;
 using System.IO;
+using UnityEngine.SceneManagement;
 
 public class chapterManager : MonoBehaviour
 {
     public static chapterManager instance;
     public TextAsset asset;
     public static string[] chapterData; // donde estaran almacenadas las lineas del archivo
-    playerCharacterSheet player = new playerCharacterSheet(10, 10, 10, 10);
+    public static playerCharacterSheet player = new playerCharacterSheet(10, 10, 10, 10);
 
     void Awake()
     {
@@ -22,6 +23,7 @@ public class chapterManager : MonoBehaviour
     {
         LoadChapterFile("chapter1");
         lastCharacterTalking = ""; //no hay nadie hablando antes de que comience el capitulo!!
+        Debug.Log(chapterData[chapterData.Length - 1]);
     }
 
     // Update is called once per frame
@@ -119,6 +121,7 @@ public class chapterManager : MonoBehaviour
             
             string actionChoice = actions[choiceMenu.lastChoice.index];
             readLine(actionChoice);
+            nextLine();
         }
         else
         {
@@ -150,9 +153,17 @@ public class chapterManager : MonoBehaviour
         string speaker = lastCharacterTalking;
         bool sameCharacterTalking = firstObject.Contains("+");
 
+        if(lastCharacterTalking != firstObject)
+        {
+            characterManager.instance.hideCharacter(lastCharacterTalking);
+            characterManager.instance.showCharacter(firstObject);
+            Debug.Log(lastCharacterTalking + " ha dejado de hablar, turno de " + firstObject);
+        }
+
         if(sameCharacterTalking)
         {
             firstObject = firstObject.Remove(firstObject.Length-1);
+            characterManager.instance.showCharacter(lastCharacterTalking);
         }
         
         if(firstObject.Length > 0)
@@ -160,6 +171,13 @@ public class chapterManager : MonoBehaviour
             speaker = firstObject;
             lastCharacterTalking = firstObject;
         }
+
+        if(speaker != "narrador")
+        {
+            characterClass characterSprite = characterManager.instance.getCharacter(speaker, true);
+        }
+
+        Debug.Log(speaker);
 
         dialogueShow.instance.say(secondObject, speaker);
     }
@@ -186,6 +204,11 @@ public class chapterManager : MonoBehaviour
             case "changeAbilityScore":
                 string[] newDetails = actionSplit[1].Split(',');
                 changeAbilityScore(newDetails[0], int.Parse(newDetails[1]));
+                break;
+            
+            case "nextScene":
+                Debug.Log("vamos a cambiar de escena");
+                nextScene();
                 break;
         }
     }
@@ -255,6 +278,11 @@ public class chapterManager : MonoBehaviour
                 player._intimidacion = (amount - 10) / 2;
                 break;
         }
+    }
+
+    void nextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float lerpTime = 1)

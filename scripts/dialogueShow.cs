@@ -17,15 +17,15 @@ public class dialogueShow : MonoBehaviour
 
     public void say(string text, string character = "")
     {
-        stopSpeaking();
+        stopSpeaking(character);
         speaking = StartCoroutine(speakingCoroutine(text, character));
     }
 
-    public void stopSpeaking()
+    public void stopSpeaking(string characterSpeaking = "")
     {
         if(isSpeaking) //si hay alguien hablando, para de hablar
         {
-            StopCoroutine(speaking);        
+            StopCoroutine(speaking);
         }
         
         speaking = null;

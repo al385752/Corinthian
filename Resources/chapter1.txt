@@ -8,10 +8,11 @@ Chai:Vamos a comprobar sus capacidades:
 +:Pruebe a mentirme:
 choice
 {
-"Mentir"
-saveThrow(mentira,10,chapter_1a,chapter_1b)
 "Ser honesto"
 changeAbilityScore(mentira,15)
+"Mentir"
+saveThrow(mentira,10,chapter_1a,chapter_1b)
 }
 Chai:Dudo que eso sea mentira:
 narrador:Ha mejorado tu capacidad de mentir:
+nextScene()
