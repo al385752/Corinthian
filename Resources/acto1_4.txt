@@ -1,0 +1,4 @@
+Chai:Tengo una lista de sospechosos en el pueblo a quienes interrogar. ¿Le parece si empezamos con la faena?:
+narrador:No tienes cuerpo para aguantar esto, pero cuanto antes acabes, antes volverás a casa.:
++:Tomas una bocanada profunda de aire, y das comienzo la investigación.:
+nextScene()

@@ -1,0 +1,12 @@
+narrador:Sales del ambiente cargado y te topas con otro problema.:
++:La policía militar del pueblo.:
+Chai:Buenos días, señor agente. Soy Chai, capitana de la policía militar de Corinthian.:
++:Como no nos fiamos de lo que los agentes federales hacéis en nuestra jurisdicción, voy a acompañarle por el pueblo. Espero que no le importe.:
+choice
+{
+"No me importa"
+narrador:Eres un mentiroso. Claro que te importa que un sheriff se te ponga por delante.:
+"¿No tiene mejores cosas que hacer? (Intimidación - Fácil)"
+saveThrow(intimidacion, 8, acto1_3a, acto1_3b)
+}
+Load(acto1_4)

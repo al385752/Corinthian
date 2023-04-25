@@ -1,0 +1,13 @@
+narrador::
++:Despiertas.:
++:El humo y la ceniza nublan tu vista.:
++:El cielo plomizo sobre el valle augura un mal presagio.:
++:Los signos de una revuelta en la villa son visibles.:
++:Casi parece que de la ceniza es de donde surja la niebla mañanera:
++:Todos los aldeanos que cruzas en tu camino te miran con hostilidad. ¿Sabrán por qué estás aquí?:
++:El camino hasta allí no había sido lo suficientemente duro como para tener este recibimiento.:
++:Entre la multitud te haces paso. Ves el palacete en el centro del núcleo urbano.:
++:La imponente villa se erige ante ti, el torreón más alto no se puede llegar a ver por el humo de una fogata cercana.:
++:Bajas del caballo de un salto. Te colocas bien la capa. Reunes fuerzas de donde no las hay. Respiras profundo. Rezas lo que sabes.:
++:¿Cuánto hacía que no veías un cadaver?:
+Load(acto1_2)

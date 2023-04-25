@@ -1,0 +1,23 @@
+setBackground(palacete)
+narrador:A nadie parece importarle mucho que haya habido un asesinato.:
+narrador:Ante ti, se presenta un pintoresco individuo.:
+Sima:Buenos días, me temo que usted es el enviado para la investigación, ¿no es así?:
++:Soy Sima, consejero de Ludovico.:
+narrador:Escuchas su voz temblar.:
+Sima:Bueno... Le guiaré hasta el lugar.:
+narrador:Le sigues el paso.:
++:Os paráis ante una puerta de madera. Un olor repugnante invade tus sentidos:
++:¿De verdad estás hecho para esto?:
++:Sin saber muy bien como, logras abrir la puerta.:
++:Un cadaver.:
++:Sin una cara a la que mirar.:
++:Sin manos que sostener.:
++:El dispositivo mágico de detección de huellas no es una opción en este caso.:
++:¿Por qué alguien se molestaría en borrar la identidad de un cadaver?:
++:Parece que este caso va a ser peor de lo que estabas preparado mentalmente.:
++:Te fijas en lo revuelto que está el despacho.:
++:¿El móvil del asesinato es un robo?:
++:Entonces, ¿por qué querría, o querrían, borrar a alguien?:
++:¿Y quién podría ser esta persona, cuyo destino se ha reducido a esto?:
++:Echas un último vistazo al despacho y te compadeces de lo que acabas de ver.:
+Load(acto1_3)

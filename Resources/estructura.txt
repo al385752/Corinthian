@@ -18,3 +18,5 @@ saveThrow(habilidad, dc, winState, loseState)
 changeAbilityScore(habilidad, cuanto mejora)
 
 nextScene() (reservado para cambios de acto)
+
+Load(nombre capitulo)

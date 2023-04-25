@@ -1,0 +1,3 @@
+Chai:(intimidacion - Acierto) Bueno, preferimos asegurarnos de que todo vaya bien aquí.:
++:Solo estoy cargando con el peso de la comisaría a mis espaldas.:
+Load(acto1_4)
