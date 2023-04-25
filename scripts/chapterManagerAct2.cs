@@ -6,9 +6,9 @@ using UnityEditor;
 using System.IO;
 using UnityEngine.SceneManagement;
 
-public class chapterManager : MonoBehaviour
+public class chapterManagerAct2 : MonoBehaviour
 {
-    public static chapterManager instance;
+    public static chapterManagerAct2 instance;
     public TextAsset asset;
     public static string[] chapterData; // donde estaran almacenadas las lineas del archivo
     public static playerCharacterSheet player = new playerCharacterSheet(10, 10, 10, 10);
@@ -21,9 +21,8 @@ public class chapterManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadChapterFile("introduction");
+        LoadChapterFile("chapter_1a");
         lastCharacterTalking = ""; //no hay nadie hablando antes de que comience el capitulo!!
-        Debug.Log(chapterData[chapterData.Length - 2]);
     }
 
     // Update is called once per frame

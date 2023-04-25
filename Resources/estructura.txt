@@ -1,0 +1,20 @@
+Estructura capítulo
+
+nombrePersonaje:diálogoPersonaje:acción(opcional)
++ para cuando hable el mismo en dos intervenciones seguidas
+
+setBackground(nombreFondo)
+
+choice
+{
+"primera opcion"
+acciones de la primera opcion
+"segunda opcion"
+acciones de la segunda opcion
+}
+
+saveThrow(habilidad, dc, winState, loseState)
+
+changeAbilityScore(habilidad, cuanto mejora)
+
+nextScene() (reservado para cambios de acto)

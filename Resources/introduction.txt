@@ -1,0 +1,75 @@
+narrador:...:
++:Escuchas una voz distante...:
+Voz misteriosa:Vale, agente, vamos a proceder con unas preguntas para ver que estás en condiciones para trabajar con nosotros.:
+narrador:Notas un punzante dolor en estómago.:
+Voz misteriosa:Ves un incendio en la lejanía, ¿qué haces?:
+choice
+{
+"Comprobar si hay heridos y socorrerlos"
+changeAbilityScore(mentira, 12)
+"Observar el fuego"
+changeAbilityScore(perspicacia, 12)
+}
+Voz misteriosa:Uh, interesante.:
+narrador:El dolor se convierte en calor intenso:
+Voz misteriosa:Vale, señor agente, siguiente pregunta.:
+narrador:La quemadura te sube al pecho...:
+Voz misteriosa:En caso de injusticia, ¿de qué lado se pone?:
+choice
+{
+"De los vulnerables"
+changeAbilityScore(persuasion, 12)
+"De los poderosos"
+changeAbilityScore(intimidacion, 12)
+}
+narrador:La quemadura cesa.:
+Voz misteriosa:¡Lo estás haciendo genial, señor agente!:
++:Continuemos, le prometo que queda poco.:
+narrador:Notas como empieza a hervirte la sangre que recorre tus brazos:
+Voz misteriosa:¿Estos brazos son para salvar vidas, o consolar a los que quedan cuando otro se va?:
+choice
+{
+"Salvar vidas"
+changeAbilityScore(mentira, 14)
+"Consolar a las víctimas"
+changeAbilityScore(persuasion, 14)
+}
+narrador:El dolor nunca cesa:
+Voz misteriosa:¡Estás hecho para esto!:
++:¿Vamos con otra pregunta?:
+choice
+{
+"No"
+Voces misteriosas:Tú no decides lo que hacemos.:
+"Sí"
+Voz misteriosa:Muy diligente, señor agente. Muy diligente.:
+}
+Voz misteriosa:¿Qué esconde, señor agente?:
+choice
+{
+"Nada"
+changeAbilityScore(mentira, 16)
+"Una vida vacía"
+changeAbilityScore(perspicacia, 14)
+}
+narrador:Un intenso dolor en tus ojos aparece de repente.:
+Voz misteriosa:Señor agente...:
+narrador:El dolor se introduce lentamente en tu cráneo.:
+Voz misteriosa:¡Ha llegado a la última pregunta!:
++:Si responde correctamente, la persona de la entrada le dará un caramelo por haber aguantado tan bien.:
++:Vamos allá.:
+narrador:Un dolor intenso en el cerebro.:
+Voz misteriosa:¿Crees que puedes escapar de tu destino?:
+choice
+{
+"El destino es irremediable"
+changeAbilityScore(mentira, 14)
+"Los fuertes cambiamos el destino"
+changeAbilityScore(mentira, 17)
+}
+Voz misteriosa:...:
+narrador:El dolor desaparece.:
+Voz misteriosa:Señor agente, lárguese de aquí y cumpla con su deber.:
++:Nadie puede escapar a su destino más trágico.:
+narrador:Repites para tus adentros "Nadie puede escapar":
+nextScene()
