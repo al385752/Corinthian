@@ -12,7 +12,7 @@ narrador:La campesina parece estar en contra de la postura noble.:
 choice
 {
 "¿Has organizado cosas aparte de la huelga? (Perspicacia - Fácil)"
-saveThrow(perspicacia, 10, acto2_sheranA, acto2_sheranB)
+saveThrow(perspicacia,10,acto2_sheranA,acto2_sheranB)
 "Debe ser una lucha dura."
 Sheran:Estamos haciendo lo que podemos por nuestros derechos laborales. Esto es lo mínimo que puedo hacer por todos.:
 }

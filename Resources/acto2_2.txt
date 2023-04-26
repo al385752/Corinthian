@@ -18,7 +18,7 @@ Sima:No voy a revelar confidencias del señor a la justicia.:
 choice
 {
 "'Desembucha' (Intimidación - Fácil)"
-saveThrow(intimidacion, 10, acto2_2a, acto2_2b)
+saveThrow(intimidacion,10,acto2_2a,acto2_2b)
 "Dejarlo estar"
 Sima:Los federales os creeis mejores que nadie.:
 }

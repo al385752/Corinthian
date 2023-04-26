@@ -5,7 +5,7 @@ Almiera:Es... secreto.:
 choice
 {
 "Intimidarla (Medio)"
-saveThrow(intimidacion, 14, acto3_almieraAA, acto3_almieraAB)
+saveThrow(intimidacion,14,acto3_almieraAA,acto3_almieraAB)
 "Callarse"
 Chai:Puede marcharse entonces, siguiente.:
 }

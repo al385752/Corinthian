@@ -3,7 +3,7 @@ narrador:Notas como se enerva.:
 choice
 {
 "Dime lo que ocultas"
-saveThrow(intimidacion, 12, acto2_sheranAA, acto2_sheranAB)
+saveThrow(intimidacion,12,acto2_sheranAA,acto2_sheranAB)
 "Dejarlo estar"
 Chai:Mejor nos vamos. Adíos, Sheran.:
 }

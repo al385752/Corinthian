@@ -7,6 +7,6 @@ choice
 "No me importa"
 narrador:Eres un mentiroso. Claro que te importa que un sheriff se te ponga por delante.:
 "¿No tiene mejores cosas que hacer? (Intimidación - Fácil)"
-saveThrow(intimidacion, 8, acto1_3a, acto1_3b)
+saveThrow(intimidacion,8,acto1_3a,acto1_3b)
 }
 Load(acto1_4)

@@ -22,7 +22,7 @@ Almiera:El callado de su lado debería de convencerme de ellos también. ¿No es
 choice
 {
 "'¿Podría decirnos donde se encuentra su colega?' (Persuasión - Fácil)"
-saveThrow(persuasion, 10, acto2_almieraA, acto2_almieraB)
+saveThrow(persuasion,10,acto2_almieraA,acto2_almieraB)
 "No, no pienso reducirme a ser un perro."
 Almiera:Una pena, no puedo deciros donde está Daran. Buena suerte con lo vuestro.:
 }

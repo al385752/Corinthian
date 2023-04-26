@@ -16,7 +16,7 @@ narrador:Debajo de toda esa diligencia, notas detrás de tu mente como está min
 choice
 {
 "Ver a través de sus mentiras (Mentira - Fácil)"
-saveThrow(mentira, 10, acto2_keresA, acto2_keresB)
+saveThrow(mentira,10,acto2_keresA,acto2_keresB)
 "Será que tienes hambre, será eso."
 Keres:¿Y este que mira?:
 }

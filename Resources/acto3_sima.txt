@@ -7,7 +7,7 @@ Sima:Los asuntos nobiliarios no son materia para agentes del estado, conozco la 
 choice
 {
 "'Nunca hubo cartas, ¿verdad?' (Perspicacia - Medio)"
-saveThrow(perspicacia, 14, acto3_simaA, acto3_simaB)
+saveThrow(perspicacia,14,acto3_simaA,acto3_simaB)
 "No decir nada"
 Chai:Vale, no indagaremos más en ello.:
 }

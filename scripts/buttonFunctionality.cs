@@ -12,7 +12,6 @@ public class buttonFunctionality : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("adio");
         Application.Quit();
     }
 }

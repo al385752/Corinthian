@@ -8,7 +8,7 @@ Sheran:Así es.:
 choice
 {
 "'Hemos entrevistado a tus compañeros.' (Mentira - Medio)"
-saveThrow(mentira, 14, acto3_sheranA, acto3_sheranB)
+saveThrow(mentira,14,acto3_sheranA,acto3_sheranB)
 "No hacer nada"
 Chai:Vale, no hay más preguntas."
 }
