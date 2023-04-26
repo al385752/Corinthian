@@ -42,7 +42,7 @@ public class chapterManagerAct3 : MonoBehaviour
 
     public void LoadChapterFile(string chapterName)
     {
-        AssetDatabase.ImportAsset(chapterName + ".txt");
+        //AssetDatabase.ImportAsset(chapterName + ".txt");
         asset = (TextAsset)Resources.Load(chapterName);
         chapterData = asset.text.Split('\n');
 
