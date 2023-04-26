@@ -1,0 +1,6 @@
+narrador:La sala de interrogatorios del cuartel de Corinthian.:
++:No es más que un sótano oscuro. No es una lujosidad cómoda precisamente.:
+Chai:Vamos a ir llamando a los sospechosos, no tenemos tiempo que perder.:
+narrador:Todo el tiempo que ganes, lo pasaras en casa, con un buen té de hierbas élficas.:
+Chai:Que entre Sima a la sala:
+Load(acto3_sima)

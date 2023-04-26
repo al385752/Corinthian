@@ -21,7 +21,7 @@ public class chapterManagerAct3 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadChapterFile("chapter_1a");
+        LoadChapterFile("acto3_1");
         lastCharacterTalking = ""; //no hay nadie hablando antes de que comience el capitulo!!
     }
 
@@ -175,7 +175,7 @@ public class chapterManagerAct3 : MonoBehaviour
             characterClass characterSprite = characterManager.instance.getCharacter(speaker, true);
         }
 
-        Debug.Log(speaker);
+        Debug.Log(firstObject +": " + secondObject);
 
         dialogueShow.instance.say(secondObject, speaker);
     }
@@ -223,7 +223,7 @@ public class chapterManagerAct3 : MonoBehaviour
 
     void setNewChapter(string newChapter)
     {
-        chapterManager.instance.LoadChapterFile(newChapter);
+        chapterManagerAct3.instance.LoadChapterFile(newChapter);
     }
 
     void savingThrow(string abilitySave, int dc, string winChapter, string loseChapter)

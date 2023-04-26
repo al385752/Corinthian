@@ -1,0 +1,13 @@
+Sima:(Perspicacia - Éxito) Le invito a no insistir, señor agente.:
+narrador:Le tiembla la voz.:
++:Miente.:
+Sima:Vale, estaba espiando el despacho de Ludovico con un escucha mágico.:
++:Estaba hablando con un varón, una conversación que se tornaba en discusión.:
+Chai:¿Y quién era? ¿Qué decían?:
+Sima:Los escuchas mágicos no distinguen palabras o voces, solo sentimientos y presencias.:
+Chai:La única persona que sabe quien estaba allí entonces será Ludovico.:
++:¿Nos oculta algo más?:
+Sima:Nada, lo prometo.:
+Chai:Muchas gracias por colaborar. Siguiente.:
+narrador:Nada como presionar para lograr lo que quieres.:
+Load(acto3_sheran)

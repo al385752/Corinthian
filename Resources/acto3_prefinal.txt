@@ -1,0 +1,18 @@
+Chai:Que entre Ludovico.:
+narrador:El noble anciano entra en la sala.:
++:Tose más de lo normal.Su piel está más caída que la última vez.:
++:Chai le pide que cuente la versión de la noche del suceso.:
++:Ludovico se repite.:
++:Insiste que no se acuerda de nada más.:
+choice
+{
+"Sabe algo de Daran"
+narrador:Su rostro cambia de semblante.:
+}
+Chai:¿Se encuentra bien?:
++:¿Le suena de algo ese nombre?:
+narrador:Ludovico se quita la capa.:
++:La piel se le empieza a tersar.:
++:Le crece el pelo y se le inflan los músculos.:
+Ludovico:Es porque yo soy Daran.:
+Load(acto3_final)

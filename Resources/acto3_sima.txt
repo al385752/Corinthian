@@ -1,0 +1,17 @@
+narrador:El consejero se adentra en el lugar.:
+Sima:Volvemos a vernos, capitana.:
++:Y agente federal.:
+narrador:No sientes que te tenga en alta estima.:
+Chai:Hemos estado revisando su declaración y tenemos una pregunta acerca de las cartas que estaba escribiendo.:
+Sima:Los asuntos nobiliarios no son materia para agentes del estado, conozco la ley.:
+choice
+{
+"'Nunca hubo cartas, ¿verdad?' (Perspicacia - Medio)"
+saveThrow(perspicacia, 14, acto3_simaA, acto3_simaB)
+"No decir nada"
+Chai:Vale, no indagaremos más en ello.:
+}
+Sima:Me despido entonces. Solo conseguís que pierda el tiempo.:
+narrador:No te quedes callado, todos ocultan algo.:
+Chai:Siguiente.:
+Load(acto3_sheran)

@@ -1,0 +1,5 @@
+Sima:(Perspicacia - Fallo) Se están tomando más libertades de las que deberían.:
+narrador:El noble se marcha airado.:
+Chai:Bueno, técnicamente no podemos indagar por ahí.:
+Chai:Siguiente.:
+Load(acto3_sheran)

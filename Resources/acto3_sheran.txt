@@ -1,0 +1,16 @@
+narrador:La sindicalista entra a la salita.:
+Chai:Sientese, tenemos que hacerle más preguntas.:
+Sheran:No tengo nada más que deciros.:
+narrador:Esta va a ser dura de roer.:
+Chai:Tú no, pero nosotros tenemos unas preguntas que hacerte.:
++:¿Estabas con el sindicato la noche del suceso?:
+Sheran:Así es.:
+choice
+{
+"'Hemos entrevistado a tus compañeros.' (Mentira - Medio)"
+saveThrow(mentira, 14, acto3_sheranA, acto3_sheranB)
+"No hacer nada"
+Chai:Vale, no hay más preguntas."
+}
+Chai:Siguiente.:
+Load(acto3_almiera)

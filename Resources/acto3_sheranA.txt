@@ -1,0 +1,9 @@
+Sheran:(Mentira - Éxito) ¿Sí?:
+narrador:Está temblando en su asiento.:
+Chai:No estabas allí la noche del crímen.:
++:¿Dónde estabas?:
+Sheran:Está bien, estaba en El Muflón Mudo hablando con Daran, es él quien lleva Umbría con Almiera.:
++:Estabamos haciendo un trato para que robasen oro del despacho de Ludovico.:
+Chai:Perfecto, lo tendremos en cuenta para la investigación.:
++:Siguiente.:
+Load(acto3_almiera)

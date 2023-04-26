@@ -1,0 +1,8 @@
+Almiera:(intimidación - Éxito) Tengo una organización secreta con Daran.:
++:Nos encargamos de los trapos sucios de los vecinos.:
+Chai:¿Has contactado con Daran en este tiempo?:
+Almiera:No, sigue desaparecido.:
+Chai:Gracias por colaborar.:
+narrador:Almiera se marcha de la sala sin mirar atrás.:
+Chai:Bueno, aun nos queda un sospechoso más.:
+Load(acto3_prefinal)

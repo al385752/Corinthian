@@ -1,0 +1,4 @@
+Almiera:(intimidación - Fallo) No les interesa saberlo.:
+narrador:Se ha esfumado.:
+Chai:Bueno, aun nos queda un sospechoso más.:
+Load(acto3_prefinal)

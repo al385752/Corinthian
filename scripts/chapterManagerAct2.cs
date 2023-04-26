@@ -223,7 +223,7 @@ public class chapterManagerAct2 : MonoBehaviour
 
     void setNewChapter(string newChapter)
     {
-        chapterManager.instance.LoadChapterFile(newChapter);
+        chapterManagerAct2.instance.LoadChapterFile(newChapter);
     }
 
     void savingThrow(string abilitySave, int dc, string winChapter, string loseChapter)
