@@ -1,0 +1,18 @@
+narrador:Antes de concluir los interrogatorios, decidís probar suerte de nuevo con Ludovico.:
+Chai:Entremos.:
+narrador:Abre un portón, un señor muy mayor rodeado de varios terapéutas se encuentran en la sala.:
+Ludovico:*tose*:
+narrador:No te sorprende que este anciano lleve todo esto. Después de todo, a nadie le sorprende que las fortunas del reino le teman a la muerte.:
+Chai:Buenas, tenemos que hablar con el señor Ludovico a solas por cuestiones de la investigación.:
+narrador:Los terapéutas se marchan rápidamente.:
+Chai:Bueno, señor Ludovico, soy la capitana Chai, ¿cómo se encuentra?:
+Ludovico:Fatal, estoy destrozado por lo sucedido.:
+Chai:Lo siento muchísimo. ¿Le importa si le hacemos unas preguntas sobre aquella noche?:
+narrador:Dudo que recuerde siquiera como se llama.:
+Chai:¿Sabría describir al intruso?:
+Ludovico:No recuerdo nada de nada, capitana. Estoy muy débil y quiero reposar lo sucedido, por mi salud.:
+narrador:Puedes observar como tiene la piel deteriorada y está visiblemente ido.:
+Chai:Bueno, había que intentarlo.:
++:Vayamos a organizar todo lo que hemos recopilado y luego llamaremos a los sospechosos para una última declaración.:
+narrador:Parece que lo peor está por venir.:
+nextScene()

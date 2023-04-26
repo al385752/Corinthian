@@ -1,0 +1,3 @@
+Sheran:(Intimidación - Fallo) No intimidarías ni a un niño, cerdo.:
+narrador:Chai y tú os marcháis. Te ha dolido lo de cerdo.:
+Load(acto2_3)

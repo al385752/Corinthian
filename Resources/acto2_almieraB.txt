@@ -1,0 +1,5 @@
+Almiera:(Persuasión - Fallo) Te falta ímpetu, cariño.:
+narrador:Te has rebajado y aún así no has conseguido nada. Eres increíble.:
+Chai:Pues nada, no hay manera.:
+narrador:Os marcháis sin mediar palabra.:
+Load(acto2_3)

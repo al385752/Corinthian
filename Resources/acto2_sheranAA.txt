@@ -1,0 +1,11 @@
+Sheran:(Intimidación - Acierto) Quizás contraté a cierto grupo clandestino.:
+Chai:¿Para qué?:
+Sheran:No he mandado matar a nadie, lo juro, solo remover un poco la mierda.:
+Chai:¿Qué clase de mierda?:
+narrador:Los papeles del despacho.:
+Sheran:Necesitabamos apoyo burocrático, pero sin tener pruebas de las jornadas ilegales no podíamos hacer nada. Eso es todo.:
+Chai:De acuerdo, dinos quien es ese 'grupo clandestino'.:
+Sheran:Umbría, ellos lo llevan todo. No les he visto la cara. El contacto cambia con el tiempo para salvarse las espaldas.:
+Chai:Vale, eso es todo.:
+narrador:Os marcháis sin mediar palabra.:
+Load(acto2_3)

@@ -1,0 +1,8 @@
+Almiera:(Persuasión - Éxito) Muy bien, buen chico.:
+narrador:Te gusta escuchar eso, sorprendentemente.:
++:Daran lleva sin aparecer unos días. Desde que empezaron las protestas estaba raro.:
++:Lo último que sé de él es que salía a altas horas de la noche desde hace unos meses.:
+Chai:Gracias por su colaboración.:
+Almiera:A vosotros, parejita. *guiña un ojo*:
+narrador:Chai y tú os largáis de inmediato.:
+Load(acto2_3)

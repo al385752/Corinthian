@@ -1,0 +1,5 @@
+narrador:La lista de sospechosos se hace larga de solo verla.:
+Chai:Estos son todos los personajes que merodean el pueblo que podrían tener que ver con el suceso.:
++:Podríamos empezar por interrogar a Sima, y luego a Ludovico.:
+narrador:Los nobles no han sido nunca de tu agrado, pero tratar con ellos puede ser lo menos malo de hoy.:
+Load(acto2_2)

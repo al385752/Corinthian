@@ -1,0 +1,32 @@
+narrador:Os dirigís hacia El Muflón Mudo, taberna local.:
++:El local apesta a alcohol. El ruido de los borrachos hace que mantener una conversación sea una tarea difícil:
+Chai:Ahí, detrás de la barra está ella.:
+narrador:Os colocáis delante del madero y os sentáis en unos taburetes que casi parecen estar sujetos con cuerdas.:
+Almiera:Hola, amores. ¿Qué os pongo?:
+Chai:No venimos a pedir.:
+narrador:Tú sí que venías a pedir.:
+Chai:Queremos hacerle unas preguntas sobre el suceso del palacete.:
+Almiera:Díganme, ¿qué podría haber hecho para estar involucrada?:
+narrador:Notas como la capitana tiene tantas ganas de interrogarla como tú de estar en este pueblo.:
+Chai:¿Dónde se encontraba hace dos días al anochecer?:
+Almiera:Trabajando aquí, desde que los trabajadores del campo se han sindicalizado y están en huelga, muchos aprovechan el tiempo entre protestas para dejarse caer por aquí.:
++:Ya sabes, hacerles pasar un buen rato es el espíritu de mi taberna.:
+narrador:Emborracharse es el objetivo de cualquiera taberna.:
+Chai:¿Trabajas sola aquí?:
+Almiera:No. Daran me ayuda con la trastienda y a cargar los tanques de zumo de cebada.:
+Chai:¿Y podemos hacerle unas preguntas?:
+Almiera:Hmm, no lo sé, ¿debería?:
+narrador:Está intentando obstruir la labor de un agente.:
+Chai:Debería.:
+Almiera:El callado de su lado debería de convencerme de ellos también. ¿No es así?:
+choice
+{
+"'¿Podría decirnos donde se encuentra su colega?' (Persuasión - Fácil)"
+saveThrow(persuasion, 10, acto2_almieraA, acto2_almieraB)
+"No, no pienso reducirme a ser un perro."
+Almiera:Una pena, no puedo deciros donde está Daran. Buena suerte con lo vuestro.:
+}
+narrador:Os marcháis sin mirar atrás.:
+Chai:Tendrías que haber accedido.:
+narrador:No, antes preferirías haber besado al borracho más sucio del local.:
+Load(acto2_3)

@@ -1,0 +1,12 @@
+Chai:Vale, agente, ¿a qué sospechoso vamos a interrogar ahora?:
+choice
+{
+"Almiera, la tabernera"
+Load(acto2_almiera)
+"Sheran, la sindicalista"
+Load(acto2_sheran)
+"Keres, el guardia"
+Load("acto2_keres")
+"Abandonar los interrogatorios"
+Load("acto2_ludovico")
+}

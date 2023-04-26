@@ -1,0 +1,25 @@
+narrador:Entráis de nuevo al palacio:
+Chai:Este sospechoso es especial.:
+narrador:Escuchas un crujido metálico cerca. Te sobresaltas.:
+Chai:Saludos, Keres.:
+Keres:...:
+narrador:Es un soldado de pocas palabras.:
+Keres:Gloria en los cielos. ¿En qué puedo servirle, capitana?:
+narrador:Te asustas al escucharle articular una oración completa.:
+Chai:Queríamos hacerte unas preguntas sobre lo sucedido aquí en el palacete, como miembro de la guardia personal que eres.:
+Keres:Por supuesto, pregunten.:
+Chai:¿Dónde estaba en el momento del suceso?:
+Keres:Estaba en la entrada, cubriendo mi puesto de guardia hasta que escuché ruidos en el despacho del señor.:
+Chai:¿Y qué viste al llegar?:
+Keres:Llegué demasiado tarde, el señor se encontraba bien físicamente, por lo que no le di mucha importancia al fiambre.:
+narrador:Debajo de toda esa diligencia, notas detrás de tu mente como está mintiendo.:
+choice
+{
+"Ver a través de sus mentiras (Mentira - Fácil)"
+saveThrow(mentira, 10, acto2_keresA, acto2_keresB)
+"Será que tienes hambre, será eso."
+Keres:¿Y este que mira?:
+}
+Chai:Vale, Keres, muchas gracias por tu tiempo.:
+narrador:Os marcháis sin mirar atrás. Ese tipo da miedo.:
+Load(acto2_3)

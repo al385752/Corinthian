@@ -1,0 +1,10 @@
+Keres:(Mentira - Éxito) No, no estaba cubriendo mi puesto de guardia. Me encontraba en El Muflón Mudo bebiendo y charlando con la tabernera.:
+narrador:Tu dispositivo de la verdad funciona a la perfección.:
+Keres:¡Eh, yo no he querido decir eso!:
+Chai:Bueno, no te preocupes, no es muy vinculante al suceso.:
+Keres:Este tipo que traes contigo me da malas vibras, Chai. ¿Es un federal?:
+Chai:Así es.:
+narrador:No tienes buena fama en los pueblos de la zona alejada a la capital.:
+Chai:Nos marchamos, gracias por tu tiempo, Keres.:
+narrador:Os vais, notando una fría mirada en el cogote.:
+Load(acto2_3)

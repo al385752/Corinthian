@@ -1,0 +1,21 @@
+narrador:De camino al centro del pueblo se encontraba la sospechosa.:
+narrador:Una campesina se encontraba allí.:
+Chai:¿Sheran, no es así?:
+Sheran:Depende de quién pregunte.:
+Chai:No venimos a detenerte, solo queremos tomarte declaración por lo ocurrido en el palacete.:
+Sheran:Vale, ¿y quién es este?:
+narrador:No sabes si es arrogancia o desdén lo que notas.:
+Chai:Es un agente federal que está al cargo de la investigación. Está conmigo.:
++:Basta de tonterías, ¿dónde estabas hace un par de días?:
+Sheran:Estaba organizando la huelga de ayer. Puede preguntar al sindicato y tendrás mi coartada probada.:
+narrador:La campesina parece estar en contra de la postura noble.:
+choice
+{
+"¿Has organizado cosas aparte de la huelga? (Perspicacia - Fácil)"
+saveThrow(perspicacia, 10, acto2_sheranA, acto2_sheranB)
+"Debe ser una lucha dura."
+Sheran:Estamos haciendo lo que podemos por nuestros derechos laborales. Esto es lo mínimo que puedo hacer por todos.:
+}
+Chai:Vale, Sheran, gracias.:
+Sheran:Ajá, iros, perros del estado.:
+Load(acto2_3)

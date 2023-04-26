@@ -21,7 +21,7 @@ public class chapterManagerAct2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        LoadChapterFile("chapter_1a");
+        LoadChapterFile("acto2_1");
         lastCharacterTalking = ""; //no hay nadie hablando antes de que comience el capitulo!!
     }
 
