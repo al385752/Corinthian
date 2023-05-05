@@ -1,5 +1,6 @@
 narrador:...:
 +:Escuchas una voz distante...:
+setBackground(act3BG)
 Voz misteriosa:Vale, agente, vamos a proceder con unas preguntas para ver que estás en condiciones para trabajar con nosotros.:
 narrador:Notas un punzante dolor en estómago.:
 Voz misteriosa:Ves un incendio en la lejanía, ¿qué haces?:
