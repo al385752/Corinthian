@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7885246871615943678}
   - component: {fileID: 4412106036960603388}
   m_Layer: 5
-  m_Name: characterContainerSima
+  m_Name: characterContainerKeres
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,8 +81,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 27.065407, y: -13.095795}
-  m_SizeDelta: {x: 53.3515, y: -25.3917}
+  m_AnchoredPosition: {x: -143.02637, y: 52.619385}
+  m_SizeDelta: {x: 393.5349, y: 486.7589}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &431909198961523724
 CanvasRenderer:
@@ -112,7 +112,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: bbd629a163bff694f9afe9ef31276606, type: 3}
+  m_Texture: {fileID: 2800000, guid: 404de47f3ae2a784f8eb7ed93cfd0522, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
