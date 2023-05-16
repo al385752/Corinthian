@@ -8,4 +8,5 @@ saveThrow(intimidacion,12,acto2_sheranAA,acto2_sheranAB)
 Chai:Mejor nos vamos. Adíos, Sheran.:
 }
 Sheran:Hmph...:
+narrador:Os marcháis con la moral baja.:stopTalking(Sheran)
 Load(acto2_3)

@@ -4,5 +4,5 @@ narrador:Te gusta escuchar eso, sorprendentemente.:
 +:Lo último que sé de él es que salía a altas horas de la noche desde hace unos meses.:
 Chai:Gracias por su colaboración.:
 Almiera:A vosotros, parejita. *guiña un ojo*:
-narrador:Chai y tú os largáis de inmediato.:
+narrador:Chai y tú os largáis de inmediato.:stopTalking(Almiera)
 Load(acto2_3)

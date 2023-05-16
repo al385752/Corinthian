@@ -100,7 +100,6 @@ public class chapterManagerAct2 : MonoBehaviour
 
             if(line.Contains("}"))
             {
-                Debug.Log("sacabao");
                 readingChoices = false;
             }
             else
@@ -155,7 +154,6 @@ public class chapterManagerAct2 : MonoBehaviour
         {
             characterManager.instance.hideCharacter(lastCharacterTalking);
             characterManager.instance.showCharacter(firstObject);
-            Debug.Log(lastCharacterTalking + " ha dejado de hablar, turno de " + firstObject);
         }
 
         if(sameCharacterTalking)
@@ -174,8 +172,6 @@ public class chapterManagerAct2 : MonoBehaviour
         {
             characterClass characterSprite = characterManager.instance.getCharacter(speaker, true);
         }
-
-        Debug.Log(speaker);
 
         dialogueShow.instance.say(secondObject, speaker);
     }
@@ -209,8 +205,12 @@ public class chapterManagerAct2 : MonoBehaviour
                 break;
             
             case "nextScene":
-                Debug.Log("vamos a cambiar de escena");
                 nextScene();
+                break;
+            
+            case "stopTalking":
+                Debug.Log("yepa");
+                characterStopTalking(actionSplit[1]);
                 break;
         }
     }
@@ -290,6 +290,17 @@ public class chapterManagerAct2 : MonoBehaviour
     void nextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    void characterStopTalking(string characterName)
+    {
+        Debug.Log("Tratando de eliminar a " + characterName);
+        Debug.Log(characterManager.instance.characterList.Count);
+        characterManager.instance.destroyCharacter(characterName);
+        /*foreach( var x in characterManager.instance.characterList) {
+            Debug.Log(x.characterName);
+        }*/
+        Debug.Log(characterManager.instance.characterList.Count);
     }
 
     IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float lerpTime = 1)

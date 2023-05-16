@@ -1,4 +1,4 @@
 Sheran:(Mentira - Fallo) No esperaréis que me trague las mentiras de un par de cerdos como vosotros.:
 narrador:Mentir es el trabajo del policía, ¿qué somos sin ello?:
-Chai:*resopla* Que entre el siguiente.:
+Chai:*resopla* Que entre el siguiente.:stopTalking(Sheran)
 Load(acto3_almiera)

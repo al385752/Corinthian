@@ -3,6 +3,6 @@ Almiera:(intimidación - Éxito) Tengo una organización secreta con Daran.:
 Chai:¿Has contactado con Daran en este tiempo?:
 Almiera:No, sigue desaparecido.:
 Chai:Gracias por colaborar.:
-narrador:Almiera se marcha de la sala sin mirar atrás.:
+narrador:Almiera se marcha de la sala sin mirar atrás.:stopTalking(Almiera)
 Chai:Bueno, aun nos queda un sospechoso más.:
 Load(acto3_prefinal)

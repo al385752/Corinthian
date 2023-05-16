@@ -1,4 +1,4 @@
 Almiera:(intimidación - Fallo) Traten mejor a los que pagamos su sueldo.:
-narrador:Se ha esfumado.:
+narrador:Se ha esfumado.:stopTalking(Almiera)
 Chai:Bueno, aun nos queda un sospechoso más.:
 Load(acto3_prefinal)

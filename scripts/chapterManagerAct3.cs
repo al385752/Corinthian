@@ -100,7 +100,6 @@ public class chapterManagerAct3 : MonoBehaviour
 
             if(line.Contains("}"))
             {
-                Debug.Log("sacabao");
                 readingChoices = false;
             }
             else
@@ -155,7 +154,6 @@ public class chapterManagerAct3 : MonoBehaviour
         {
             characterManager.instance.hideCharacter(lastCharacterTalking);
             characterManager.instance.showCharacter(firstObject);
-            Debug.Log(lastCharacterTalking + " ha dejado de hablar, turno de " + firstObject);
         }
 
         if(sameCharacterTalking)
@@ -174,8 +172,6 @@ public class chapterManagerAct3 : MonoBehaviour
         {
             characterClass characterSprite = characterManager.instance.getCharacter(speaker, true);
         }
-
-        Debug.Log(firstObject +": " + secondObject);
 
         dialogueShow.instance.say(secondObject, speaker);
     }
@@ -209,8 +205,11 @@ public class chapterManagerAct3 : MonoBehaviour
                 break;
             
             case "nextScene":
-                Debug.Log("vamos a cambiar de escena");
                 nextScene();
+                break;
+            
+            case "stopTalking":
+                characterStopTalking(actionSplit[1]);
                 break;
         }
     }
@@ -290,6 +289,11 @@ public class chapterManagerAct3 : MonoBehaviour
     void nextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    void characterStopTalking(string characterName)
+    {
+        characterManager.instance.destroyCharacter(characterName);
     }
 
     IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float lerpTime = 1)

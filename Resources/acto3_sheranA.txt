@@ -5,5 +5,5 @@ Chai:No estabas allí la noche del crímen.:
 Sheran:Está bien, estaba en El Muflón Mudo hablando con Daran, es él quien lleva Umbría con Almiera.:
 +:Estabamos haciendo un trato para que robasen oro del despacho de Ludovico.:
 Chai:Perfecto, lo tendremos en cuenta para la investigación.:
-+:Siguiente.:
++:Siguiente.:stopTalking(Sheran)
 Load(acto3_almiera)

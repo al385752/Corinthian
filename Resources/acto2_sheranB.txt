@@ -1,4 +1,4 @@
 Sheran:(Perspicacia - Fallo) Nada más que la lucha obrera.:
 Chai:Está bien, Sheran, gracias por tu tiempo.:
-narrador:Os vais sin mediar palabra.:
+narrador:Os vais sin mediar palabra.:stopTalking(Sheran)
 Load(acto2_3)

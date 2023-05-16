@@ -1,4 +1,4 @@
-Chai:Vale, agente, ¿a qué sospechoso vamos a interrogar ahora?:
+Chai:Vale, agente, ¿a qué sospechoso vamos a interrogar ahora?:setBackground(pueblo)
 choice
 {
 "Almiera, la tabernera"

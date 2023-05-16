@@ -1,3 +1,4 @@
+
 narrador:El consejero se adentra en el lugar.:
 Sima:Volvemos a vernos, capitana.:
 +:Y agente federal.:
@@ -13,5 +14,5 @@ Chai:Vale, no indagaremos más en ello.:
 }
 Sima:Me despido entonces. Solo conseguís que pierda el tiempo.:
 narrador:No te quedes callado, todos ocultan algo.:
-Chai:Siguiente.:
+Chai:Siguiente.:stopTalking(Sima)
 Load(acto3_sheran)

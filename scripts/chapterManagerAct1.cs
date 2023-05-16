@@ -212,6 +212,10 @@ public class chapterManagerAct1 : MonoBehaviour
                 Debug.Log("vamos a cambiar de escena");
                 nextScene();
                 break;
+
+            case "stopTalking":
+                characterStopTalking(actionSplit[1]);
+                break;
         }
     }
 
@@ -290,6 +294,11 @@ public class chapterManagerAct1 : MonoBehaviour
     void nextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    void characterStopTalking(string characterName)
+    {
+        characterManager.instance.destroyCharacter(characterName);
     }
 
     IEnumerator FadeCanvasGroup(CanvasGroup cg, float start, float end, float lerpTime = 1)

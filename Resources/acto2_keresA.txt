@@ -6,5 +6,5 @@ Keres:Este tipo que traes contigo me da malas vibras, Chai. ¿Es un federal?:
 Chai:Así es.:
 narrador:No tienes buena fama en los pueblos de la zona alejada a la capital.:
 Chai:Nos marchamos, gracias por tu tiempo, Keres.:
-narrador:Os vais, notando una fría mirada en el cogote.:
+narrador:Os vais, notando una fría mirada en el cogote.:stopTalking(Keres)
 Load(acto2_3)

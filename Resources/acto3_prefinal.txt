@@ -1,4 +1,6 @@
+
 Chai:Que entre Ludovico.:
+Ludovico:...:
 narrador:El noble anciano entra en la sala.:
 +:Tose más de lo normal.Su piel está más caída que la última vez.:
 +:Chai le pide que cuente la versión de la noche del suceso.:
@@ -14,5 +16,5 @@ Chai:¿Se encuentra bien?:
 narrador:Ludovico se quita la capa.:
 +:La piel se le empieza a tersar.:
 +:Le crece el pelo y se le inflan los músculos.:
-Ludovico:Es porque yo soy Daran.:
+Ludovico:Es porque yo soy Daran.:stopTalking(Ludovico)
 Load(acto3_final)

@@ -9,5 +9,5 @@ Chai:La única persona que sabe quien estaba allí entonces será Ludovico.:
 +:¿Nos oculta algo más?:
 Sima:Nada, lo prometo.:
 Chai:Muchas gracias por colaborar. Siguiente.:
-narrador:Nada como presionar para lograr lo que quieres.:
+narrador:Nada como presionar para lograr lo que quieres.:stopTalking(Sima)
 Load(acto3_sheran)

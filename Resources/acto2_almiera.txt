@@ -28,5 +28,5 @@ Almiera:Una pena, no puedo deciros donde está Daran. Buena suerte con lo vuestr
 }
 narrador:Os marcháis sin mirar atrás.:
 Chai:Tendrías que haber accedido.:
-narrador:No, antes preferirías haber besado al borracho más sucio del local.:
+narrador:No, antes preferirías haber besado al borracho más sucio del local.:stopTalking(Almiera)
 Load(acto2_3)

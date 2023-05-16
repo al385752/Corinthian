@@ -1,5 +1,5 @@
 Keres:(Mentira - Fallo) Noto algo raro...:
 narrador:Tu dispositivo detector de mentiras no parece haber funcionado.:
 Chai:Vale, Keres, muchas gracias por tu tiempo.:
-narrador:Os marcháis sin mirar atrás. Ese tipo da miedo.:
+narrador:Os marcháis sin mirar atrás. Ese tipo da miedo.:stopTalking(Keres)
 Load(acto2_3)

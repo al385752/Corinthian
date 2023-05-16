@@ -52,6 +52,7 @@ public class characterManager : MonoBehaviour
             colorActual.r = 1.0f;
             colorActual.g = 1.0f;
             colorActual.b = 1.0f;
+            colorActual.a = 1.0f;
             selectedCharacter.rendererInstance.bodyRenderer.color = colorActual;
         }
     }
@@ -66,6 +67,19 @@ public class characterManager : MonoBehaviour
             colorActual.r = .2f;
             colorActual.g = .2f;
             colorActual.b = .2f;
+            colorActual.a = 1.0f;
+            selectedCharacter.rendererInstance.bodyRenderer.color = colorActual;
+        }
+    }
+
+    public void destroyCharacter(string characterToDestroy)
+    {
+        int index = -1;
+        if(charDictionary.TryGetValue(characterToDestroy, out index))
+        {
+            characterClass selectedCharacter = characterList[index];
+            Color colorActual = selectedCharacter.rendererInstance.bodyRenderer.color;
+            colorActual.a = 0f;
             selectedCharacter.rendererInstance.bodyRenderer.color = colorActual;
         }
     }

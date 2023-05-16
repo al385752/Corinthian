@@ -7,5 +7,5 @@ Sheran:Necesitabamos apoyo burocrático, pero sin tener pruebas de las jornadas 
 Chai:De acuerdo, dinos quien es ese 'grupo clandestino'.:
 Sheran:Umbría, ellos lo llevan todo. No les he visto la cara. El contacto cambia con el tiempo para salvarse las espaldas.:
 Chai:Vale, eso es todo.:
-narrador:Os marcháis sin mediar palabra.:
+narrador:Os marcháis sin mediar palabra.:stopTalking(Sheran)
 Load(acto2_3)

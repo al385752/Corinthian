@@ -18,4 +18,5 @@ Sheran:Estamos haciendo lo que podemos por nuestros derechos laborales. Esto es 
 }
 Chai:Vale, Sheran, gracias.:
 Sheran:Ajá, iros, perros del estado.:
+narrador:Dejáis atrás a la sindicalista.:stopTalking(Sheran)
 Load(acto2_3)

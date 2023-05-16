@@ -1,3 +1,5 @@
+
+Sheran:...:
 narrador:La sindicalista entra a la salita.:
 Chai:Sientese, tenemos que hacerle más preguntas.:
 Sheran:No tengo nada más que deciros.:
@@ -12,5 +14,5 @@ saveThrow(mentira,14,acto3_sheranA,acto3_sheranB)
 "No hacer nada"
 Chai:Vale, no hay más preguntas."
 }
-Chai:Siguiente.:
+Chai:Siguiente.:stopTalking(Sheran)
 Load(acto3_almiera)

@@ -1,4 +1,5 @@
-Daran:He sido yo todo este tiempo.:
+
+Daran:He sido yo todo este tiempo.:stopTalking(Ludovico)
 narrador:Perfecto, un mago. Lo que faltaba.:
 Daran:No podía aguantar más transformado. Quiero confesar lo que ha pasado.:
 +:Me contrataron para robar oro de los aposentos de Ludovico.:
