@@ -1,4 +1,4 @@
-narrador:La sala de interrogatorios del cuartel de Corinthian.:
+narrador:La sala de interrogatorios del cuartel de Corinthian.:setBackground(act3BG)
 +:No es más que un sótano oscuro. No es una lujosidad cómoda precisamente.:
 Chai:Vamos a ir llamando a los sospechosos, no tenemos tiempo que perder.:
 narrador:Todo el tiempo que ganes, lo pasaras en casa, con un buen té de hierbas élficas.:

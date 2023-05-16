@@ -1,4 +1,4 @@
-narrador:Os dirigís hacia El Muflón Mudo, taberna local.:
+narrador:Os dirigís hacia El Muflón Mudo, taberna local.:setBackground(taberna)
 +:El local apesta a alcohol. El ruido de los borrachos hace que mantener una conversación sea una tarea difícil:
 Chai:Ahí, detrás de la barra está ella.:
 narrador:Os colocáis delante del madero y os sentáis en unos taburetes que casi parecen estar sujetos con cuerdas.:

@@ -1,4 +1,4 @@
-narrador:Antes de concluir los interrogatorios, decidís probar suerte de nuevo con Ludovico.:
+narrador:Antes de concluir los interrogatorios, decidís probar suerte de nuevo con Ludovico.:setBackground(palacete)
 Chai:Entremos.:
 narrador:Abre un portón, un señor muy mayor rodeado de varios terapéutas se encuentran en la sala.:
 Ludovico:*tose*:

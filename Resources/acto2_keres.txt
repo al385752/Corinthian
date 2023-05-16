@@ -1,4 +1,4 @@
-narrador:Entráis de nuevo al palacio:
+narrador:Entráis de nuevo al palacio:setBackground(palacete)
 Chai:Este sospechoso es especial.:
 narrador:Escuchas un crujido metálico cerca. Te sobresaltas.:
 Chai:Saludos, Keres.:

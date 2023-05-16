@@ -1,4 +1,4 @@
-narrador:De camino al centro del pueblo se encontraba la sospechosa.:
+narrador:De camino al centro del pueblo se encontraba la sospechosa.:setBackground(pueblo)
 narrador:Una campesina se encontraba allí.:
 Chai:¿Sheran, no es así?:
 Sheran:Depende de quién pregunte.:
